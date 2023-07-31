@@ -5,13 +5,13 @@ import Home from "./paginas/Home";
 import NotFound from "./paginas/NotFound";
 import SobreNosotros from "./paginas/SobreNosotros";
 import Ventas from "./paginas/Ventas";
-import Navbar from "./componentes/Navbar";
-import Sidebar from "./componentes/Sidebar";
+import Nav from "./componentes/Nav";
 
 const App = () => {
-  //Mi idea es ocultar la Navbar y la Sidebar de la pagina NotFound por eso agregue u
+  //Mi idea es ocultar la Navbar y la Sidebar de la pagina NotFound
 
   // Lista de rutas donde se mostrará el Navbar y el Sidebar
+
   const rutasDondeSeMuestran = ["/", "/SobreNosotros", "/Ventas", "/Contacto"];
 
   return (
@@ -19,8 +19,7 @@ const App = () => {
       <BrowserRouter>
         {rutasDondeSeMuestran.includes(window.location.pathname) && (
           <>
-            <Navbar />
-            <Sidebar />
+            <Nav />
           </>
         )}
         <Routes>
@@ -33,6 +32,6 @@ const App = () => {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

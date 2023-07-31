@@ -1,6 +1,77 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+/* Estilos para el banner */
+.bannerLarge {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.bannerSmall {
+  display: none;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Estilos para la sección "Nuestros principales productos" */
+.productosContainer {
+  padding: 20px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  max-width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Estilos para el contenedor de clientes */
+.clientesContainer {
+  padding: 20px;
+}
+
+.clientes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.clienteCard {
+  max-width: 250px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.clienteCard img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Media query para mostrar el banner pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+  .bannerLarge {
+    display: none;
   }
-  
+
+  .bannerSmall {
+    display: block;
+  }
+}

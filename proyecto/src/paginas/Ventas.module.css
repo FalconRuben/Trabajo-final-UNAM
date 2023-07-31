@@ -1,0 +1,95 @@
+/* Estilos para la página de Ventas */
+.ventas {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-card {
+  flex-basis: calc(
+    33.33% - 20px
+  ); /* Esto es para mostrar 3 productos por fila */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00b300;
+  margin-top: 10px;
+}
+
+/* Barra de búsqueda */
+.searchBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.searchBar input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.searchIcon {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+  .product-card {
+    flex-basis: calc(
+      50% - 20px
+    ); /* 2 productos por fila en pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-card {
+    flex-basis: calc(
+      100% - 20px
+    ); /* 1 producto por fila en pantallas aún más pequeñas */
+  }
+
+  .product-card img {
+    max-width: 80%; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para la sección "Sobre nosotros" */
+.fondoSobreNosotros {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenidoSobreNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  padding: 50px 20px;
+}
+
+/* Estilos para la sección "Misión y Visión" */
+.fondoMisionVision {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contenidoMisionVision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 50px 20px;
+}
+
+/* Estilos para las tarjetas */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  flex: 1 0 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.tarjeta h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  text-align: center;
+}
+
+/* Estilos para la tarjeta de "Sobre nosotros" */
+.tarjetaSobreNosotros {
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenidoSobreNosotros,
+  .contenidoMisionVision {
+    padding: 30px 10px;
+  }
+
+  .tarjetas {
+    padding: 10px;
+  }
+
+  .tarjeta {
+    max-width: 100%;
+  }
+}
+
+.tarjetaSigaDeslizando {
+  flex: 1 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenidoSobreNosotros,
+  .contenidoMisionVision {
+    padding: 30px 10px;
+  }
+
+  .tarjetas {
+    padding: 10px;
+  }
+
+  .tarjeta {
+    max-width: 100%;
+  }
+}
