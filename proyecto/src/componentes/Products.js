@@ -3,7 +3,7 @@
 const products = [
   {
     id: 1,
-    name: "Teclado inalambrico",
+    name: "Teclado inalámbrico",
     description: "Teclado con ergonomico con mousepad",
     price: 5000,
     image:

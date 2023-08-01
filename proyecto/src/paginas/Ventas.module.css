@@ -1,10 +1,12 @@
-/* Estilos para la página de Ventas */
+
 .ventas {
   padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px; 
+
 }
 
 .productList {
@@ -15,9 +17,7 @@
 }
 
 .product-card {
-  flex-basis: calc(
-    33.33% - 20px
-  ); /* Esto es para mostrar 3 productos por fila */
+  flex-basis: calc(33.33% - 20px); /* Esto es para mostrar 3 productos por fila */
   margin-bottom: 20px;
   padding: 10px;
   background-color: #f0f0f0;
@@ -73,23 +73,50 @@
   align-items: center;
 }
 
+/* Icono de carrito y carrito */
+.cartIcon {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+/* Estilos para el contador en el carrito */
+.cartItemCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4b4b;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
 /* Media queries para hacer el diseño responsive */
 @media screen and (max-width: 768px) {
   .product-card {
-    flex-basis: calc(
-      50% - 20px
-    ); /* 2 productos por fila en pantallas más pequeñas */
+    flex-basis: calc(50% - 20px); /* 2 productos por fila en pantallas más pequeñas */
   }
 }
 
 @media screen and (max-width: 480px) {
   .product-card {
-    flex-basis: calc(
-      100% - 20px
-    ); /* 1 producto por fila en pantallas aún más pequeñas */
+    flex-basis: calc(100% - 20px); /* 1 producto por fila en pantallas aún más pequeñas */
   }
 
   .product-card img {
     max-width: 80%; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
   }
+}
+
+.comprarButton {
+  background-color: #00b300;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
 }

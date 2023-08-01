@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./NotFound.module.css"; 
+import styles from "./NotFound.module.css";
 
 const NotFound = () => {
   return (
@@ -8,7 +8,7 @@ const NotFound = () => {
         <div className={styles.mars}></div>
         <img
           src="https://assets.codepen.io/1538474/404.svg"
-          className={styles["logo-404"]} 
+          className={styles["logo-404"]}
         />
         <img
           src="https://assets.codepen.io/1538474/meteor.svg"
